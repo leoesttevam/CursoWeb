@@ -1,0 +1,27 @@
+body{
+	background-image: url('imagem/fundo.png');
+	font: 16px Arial, Helvetica, sans-serif;
+}
+
+h2{
+	color: #828271;
+}
+
+a{
+	color: 4b566a;
+	text-decoration: none;
+}
+
+.texto{
+	background-color: #c5c5b2;
+	padding: 20px;
+}
+
+.texto2{
+	background-color: #f5f5dc;
+	font-size: 1.2em;
+}
+
+.imagem{
+	border: 10px solid #c3c3ae;
+}
