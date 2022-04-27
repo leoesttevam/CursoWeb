@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    
+    <!--[if lt IE 9]>
+	    <script src="<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js">
+
+        </script>
+    <![endif]-->
+    <title>Museu nacional</title>
+</head>
+
+<body>
+
+    <div id="container">
+        
+        <header>
+            <div id="logo">
+                <h1><a href="">Museu nacional</a></h1>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Exposições</a></li>
+                    <li><a href="">Pesquisa</a></li>
+                    <li><a href="">Acervo</a></li>
+                    <li><a href="">Vídeos</a></li>
+                    <li><a href="">Fotos</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="principal">
+
+            <div id="conteudo">
+                <section id="capa">
+                    <img src="imagem/museu.png">
+                </section>
+
+                <section id="postagem">
+
+                    <article id="video">
+                        <h3>Vídeo: conheça o museu</h3>
+                        <iframe width="310" height="170" src="https://www.youtube.com/embed/RGUYb-hivrc" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; 
+                        autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                    </article>
+
+                    <article id="mapa">
+                        <h3>Mapa: Encontre o museu</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.2064455939417!2d-43.22871758463203!3d-22.905755043593675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu%20Nacional%20-%20UFRJ!5e0!3m2!1spt-BR!2sbr!4v1650984605104!5m2!1spt-BR!2sbr"
+                         width="310" height="170" style="border:0;" allowfullscreen="" loading="lazy"
+                         referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </article>
+
+                    <article id="expo">
+                        <h3>Exposições</h3>
+                        <ul>
+                            <li><a href="">Farao</a></li>
+                            <li><a href="">Dinossauros</a></li>
+                            <li><a href="">Plantas exoticas</a></li>
+                            <li><a href="">Aniamais</a></li>
+                            <li><a href="">foseis</a></li>
+                        </ul>
+                    </article>
+
+                    <article id="historia">
+                        <h3>200 anos de histórias</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Asperiores id minima laborum quod, 
+                            optio eligendi illo quos nulla fugiat quia nisi tempore laudantium, 
+                            quas ex recusandae iusto nobis temporibus cumque?
+                        </p>
+                        <a href=""><strong>Leia Mais</strong></a>
+                    </article>
+                </section>
+            </div>
+
+            <aside>
+                <section id="depoi">
+                    <img src="imagem/depoimento.png">
+                </section>
+
+                <section id="visita">
+                    <h4>Faça uma visita</h4>
+                    <form>
+                        <fieldset>
+                            <legend>Selecione uma data</legend>
+
+                            <label for="data">Data:</label><br>
+                            <input class="campo" type="text" id="data" value="dd/mm/aaaa"><br>
+
+                            <label for="qtd">Quantidade de Pessoas:</label><br>
+                            <input class="campo" style="width: 30px;" type="text" id="qtd" value="1">
+                        </fieldset>
+
+                        <input class="botao" type="submit" value="verificar disponibilidade">
+                    </form>
+                </section>
+
+                <section id="galeria">
+                    <h1>Galeria de fotos</h1>
+                    <a href="">
+                        <img src="imagem/imagem1.jpg" height="93" width="93">
+                    </a>
+
+                    <a href="">
+                        <img src="imagem/imagem2.jpg" height="93" width="93">
+                    </a>
+
+                    <a href="">
+                        <img src="imagem/imagem3.jpg" height="93" width="93">
+                    </a>
+
+                    <a href="">
+                        <img src="imagem/imagem4.jpg" height="93" width="93">
+                    </a>
+                </section>
+
+            </aside>
+
+        </div>
+
+        <footer>
+            <p>
+                <a href="">HOME</a>
+                <a href="">Exposições</a>
+                <a href="">Pesquisa</a>
+                <a href="">Acervo</a>
+                <a href="">Vídeos</a>
+                <a href="">Fotos</a>
+                <a href="">Contato</a>
+            </p>
+
+            <p>
+                2022 <a href="">Museu nacional</a> - Todos os direitos reservados.
+            </p>
+        </footer>
+    </div>
+
+</body>
+</html>
