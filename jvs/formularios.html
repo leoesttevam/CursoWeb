@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento formularios</title>
+</head>
+<body>
+    
+    <div>
+        <input onfocus="console.log('Teste')" onblur="('Perdeu o foco')" type="text">
+    </div>
+
+    <select name="" id="" onchange="console.log('recebeu o foco')">
+        <option>-- Selecione --</option>
+        <option value="1">-- Primeira opção --</option>
+        <option value="2">-- Selecione --</option>
+    </select>
+
+    <script>
+         //formularios -> onfocus, onblur, onchange  
+        function acao1(){
+            alert('Evento disparado')
+        }   
+
+        function acao2(){
+            alert('O cursor do mouse deixou a região')
+        }
+    </script>
+</body>
+</html>
