@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bom Screen</title>
+</head>
+
+<body>
+
+    <script>
+
+        var altura = window.screen.availHeight
+        var lagura = window.screen.availWidth
+
+        //document.write('Altura do navegador é: ' + altura + ' <br/>')
+        //document.write('Lagura do navegador é: ' + lagura)
+
+        if(lagura < 500){
+            document.write('Lógica para impressão do menu versão mobile')
+        }else{
+            document.write('Lógica para impressão do menu versão web')
+        }
+    </script>
+</body>
+</html>
