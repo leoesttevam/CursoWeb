@@ -1,0 +1,42 @@
+/* Barra de navegação horizontal */
+
+ul {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	list-style: none;
+	width: 720px;
+	background: #159cb0 url(../imagem/fundo-horizontal.png) repeat-x;
+	float: left;
+}
+
+ul li{
+	float: left;
+}
+
+ul a {
+	display: block;
+	padding: 0 2em;
+	line-height: 2.2em;
+	text-decoration: none;
+	color: #fff;
+	background: url(../imagem/divisor.png) repeat-y left top;
+}
+
+ul .primeiro a {
+	background: none;
+}
+
+ul a:hover{
+	color: #085662;
+	background: #44cade;
+}
+
+#home .home a,
+#sobre .sobre a,
+#servicos .servico a,
+#noticia .noticia a,
+#contato .contato a {
+	background-position: right bottom;
+	background-color: #f99200;
+	color: white;
+}
