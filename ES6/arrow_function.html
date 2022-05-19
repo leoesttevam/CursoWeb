@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Função arrow funcion</title>
+</head>
+
+<body>
+
+    <script type="text/babel">
+
+        /*
+        let quadrado = function(x = 5){
+            return x * x
+        }
+
+        //arrow function
+        let quadrado2 = (x) => {
+            return x * x
+        }
+
+        let quadrado3 = x => {
+            return x * x
+        }
+
+        let quadrado4 = x => x * x //retorno implícito
+
+        document.write(quadrado4(5))*/
+
+        /*
+        let parOuImpar = function(numero){
+
+            if(numero % 2 === 0){
+                return 'Par'
+            }else{
+                return 'Ìmpar'
+            }
+        }*/
+
+        //let parOuImpar = numero => { if(numero % 2 === 0){return 'Par'}else{return 'ìmpar'}} ou
+        let parOuImpar = numero => numero % 2 === 0 ? 'Par' : 'Ímpar' //retorno ímplicito
+        document.write(parOuImpar(163))
+    </script>
+</body>
+</html>
