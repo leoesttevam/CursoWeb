@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>OO Pilar herança</title>
+</head>
+
+<body>
+
+    <script type="text/babel">
+
+      class Animal{
+          constructor(){
+              this.cor = ''
+              this.tamanho = null
+              this.peso = null
+          }
+          dormir(){
+            console.log('Dormir')
+          }
+      }
+
+
+      class Cachorro extends Animal{
+          constructor(){
+              super()
+              this.orelhas = 'Grandes e caidas'
+          }
+
+          correr(){
+            console.log('Correr')
+          }
+
+          rosnar(){
+            console.log('Rosnar')
+          }
+      }
+
+      class Passaro extends Animal{
+          constructor(){
+              super()
+              this.bico = 'Curto'
+          }
+
+          voar(){
+            console.log('Voar')
+          }
+      }
+
+      class Papagaio extends Passaro{
+          constructor(){
+              super()
+              this.sabeFalar = true
+          }
+
+          falar(){
+            console.log('Falar')
+          }
+      }
+
+      let cachorro = new Cachorro()
+      cachorro.cor = 'Branco e marron'
+      cachorro.tamanho = 30
+      cachorro.dormir('Dormir')
+
+      let passaro= new Passaro()
+      passaro.cor = 'Branco e marron'
+      passaro.tamanho = 10
+      passaro.dormir('Dormir')
+
+      let papagaio = new Papagaio()
+      papagaio.cor = 'Verde'
+      papagaio.falar()
+      papagaio.peso = 8.3
+      papagaio.tamanho = 23
+
+      console.log(cachorro)
+      console.log(passaro)
+      console.log(papagaio)
+    </script>
+</body>
+</html>
