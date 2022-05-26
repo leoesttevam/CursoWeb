@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Destructuring Assignment</title>
+</head>
+
+<body>
+
+    <script type="text/babel">
+
+       let produto = {
+           descricao: 'Notebook',
+           preco: 1800,
+           detalhes:{
+               fabricante: 'abc',
+               modelo: 'xyz'
+           }
+       }
+
+       //composição -> é um, tem um
+
+       //token do destructuring ele pode variar
+       //array utilizamos []
+       //objeto utilizamos {}
+
+       //let { descricao, preco } = produto //estamos retirando dentro do produto descrição e preço
+       //let { descricao: d, preco: p } = produto
+       //let { descricao: d, preco: p, desconto } = produto
+       //let { descricao: d, preco: p = 1000, desconto = 5 } = produto
+
+       let{ detalhes: { fabricante: f, modelo: m } } = produto
+       console.log(f, m) 
+    </script>
+</body>
+</html>
